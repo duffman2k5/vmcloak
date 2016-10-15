@@ -7,7 +7,7 @@ from vmcloak.abstract import WindowsAutounattended
 class Windows7(WindowsAutounattended):
     name = "win7"
     service_pack = 2
-    interface = "Local Area Connection"
+    interface = "LAN-Verbindung"
 
     # List of preferences when multiple Windows 7 types are available.
     preference = "professional", "homepremium", "ultimate", "homebasic"
