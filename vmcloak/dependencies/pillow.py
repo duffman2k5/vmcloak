@@ -17,10 +17,10 @@ class Pillow(Dependency):
     def run(self):
         self.upload_dependency("C:\\pillow.exe")
         self.a.execute("C:\\pillow.exe", async=True)
-        self.a.click("Setup", "&Next >")
-        self.a.click("Setup", "&Next >")
-        self.a.click("Setup", "&Next >")
-        self.a.click("Setup", "Finish")
+        self.a.click("Setup", "&Weiter >")
+        self.a.click("Setup", "&Weiter >")
+        self.a.click("Setup", "&Weiter >")
+        self.a.click("Setup", "Fertig stellen")
 
         self.wait_process_exit("pillow.exe")
         self.a.remove("C:\\pillow.exe")
